@@ -1,0 +1,11 @@
+# sources
+/idea
+/atcoder
+/cf
+
+# executables
+*.elf
+
+# OS X
+*.dSYM
+*.DS_Store

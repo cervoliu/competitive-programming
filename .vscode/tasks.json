@@ -1,0 +1,44 @@
+// I wonder is there a way to reuse json structure in different tasks
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Compile Source",
+            "osx": {
+                "command": "/usr/bin/clang++",
+                "args": [
+                    "-fcolor-diagnostics",
+                    "-fansi-escape-codes",
+                    "-g",
+                    "${fileBasename}",
+                    "-o",
+                    "${fileBasenameNoExtension}.elf",
+                    "-std=c++17"
+                ]
+            },
+            "linux": {
+                "command": "/usr/bin/g++",
+                "args": [
+                    "-fcolor-diagnostics",
+                    "-fansi-escape-codes",
+                    "-g",
+                    "${fileBasename}",
+                    "-o",
+                    "${fileBasenameNoExtension}.elf",
+                    "-std=c++17"
+                ]
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
