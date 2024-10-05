@@ -19,11 +19,11 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"github.vscode-github-actions",
 				"Github.copilot",
-				"VisualStudioExptTeam.vscodeintellicode",
 				"ms-python.python",
 				"llvm-vs-code-extensions.vscode-clangd",
-				"ms-vscode.cpptools"
+				"vadimcn.vscode-lldb"
 			]
 		}
 	},

@@ -1,10 +1,7 @@
 {
-    "C_Cpp.default.intelliSenseMode": "linux-gcc-arm64",
-    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.intelliSenseMode": "linux-clang-arm64",
+    "C_Cpp.intelliSenseEngine": "disabled",
     "C_Cpp.codeAnalysis.exclude": {
         "template/": true
-    },
-    "files.associations": {
-        "vector": "cpp"
     }
 }
