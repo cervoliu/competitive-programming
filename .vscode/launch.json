@@ -8,7 +8,7 @@
             "program": "${fileDirname}/${fileBasenameNoExtension}.elf",
             "args": [],
             "cwd": "${fileDirname}",
-            "preLaunchTask": "Compile Source",
+            "preLaunchTask": "Compile",
         }
     ]
 }

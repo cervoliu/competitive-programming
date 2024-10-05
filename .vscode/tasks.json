@@ -3,41 +3,40 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Compile Source",
-            "osx": {
-                "command": "/usr/bin/clang++",
-                "args": [
-                    "-fcolor-diagnostics",
-                    "-fansi-escape-codes",
-                    "-g",
-                    "${fileBasename}",
-                    "-o",
-                    "${fileBasenameNoExtension}.elf",
-                    "-std=c++17"
-                ]
-            },
+            "label": "Compile",
             "linux": {
-                "command": "/usr/bin/g++",
+                "command": "/usr/local/bin/g++",
                 "args": [
-                    "-fcolor-diagnostics",
-                    "-fansi-escape-codes",
+                    "-fdiagnostics-color=always",
                     "-g",
                     "${fileBasename}",
                     "-o",
                     "${fileBasenameNoExtension}.elf",
                     "-std=c++17"
-                ]
+                ],
             },
             "options": {
                 "cwd": "${fileDirname}"
             },
             "problemMatcher": [
-                "$gcc"
+                "$eslint-compact"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "shell",
+            "label": "Run",
+            "linux": {
+                "command": "./${fileBasenameNoExtension}.elf",
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "dependsOn": ["Compile"],
+            "problemMatcher": [],
         }
     ],
     "version": "2.0.0"

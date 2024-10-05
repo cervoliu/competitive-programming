@@ -8,4 +8,4 @@
 
 # OS X
 *.dSYM
-*.DS_Store
+.DS_Store
