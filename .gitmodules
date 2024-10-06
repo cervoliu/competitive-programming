@@ -1,7 +1,8 @@
-[submodule "testlib"]
-	path = include/testlib
-	url = https://github.com/MikeMirzayanov/testlib.git
 [submodule "include/ac-library"]
 	path = include/ac-library
 	url = https://github.com/atcoder/ac-library.git
 	branch = production
+[submodule "include/testlib"]
+	path = include/testlib
+	url = https://github.com/MikeMirzayanov/testlib.git
+	branch = master
