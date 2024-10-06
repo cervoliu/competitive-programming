@@ -8,6 +8,8 @@
                 "command": "/usr/local/bin/g++",
                 "args": [
                     "-fdiagnostics-color=always",
+                    "-I${workspaceFolder}/include/testlib",
+                    "-I${workspaceFolder}/include/ac-library",
                     "-g",
                     "${fileBasename}",
                     "-o",

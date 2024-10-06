@@ -1,7 +1,6 @@
 {
-    "C_Cpp.default.intelliSenseMode": "linux-clang-arm64",
-    "C_Cpp.intelliSenseEngine": "disabled",
-    "C_Cpp.codeAnalysis.exclude": {
-        "template/": true
-    }
+    "clangd.fallbackFlags": [
+        "-I${workspaceFolder}/include/testlib",
+        "-I${workspaceFolder}/include/ac-library"
+    ]
 }
