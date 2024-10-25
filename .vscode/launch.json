@@ -9,6 +9,9 @@
             "args": [],
             "cwd": "${fileDirname}",
             "preLaunchTask": "Compile",
+            "initCommands": [
+                "settings set target.disable-aslr false"
+            ],
         }
     ]
 }
