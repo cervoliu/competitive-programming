@@ -39,6 +39,22 @@
             },
             "dependsOn": ["Compile"],
             "problemMatcher": [],
+        },
+        {
+            "type": "shell",
+            "label": "Expand ac-library header",
+            "linux" : {
+                "command": "${workspaceFolder}/scripts/atcoder-expander.py",
+                "args": [
+                    "--lib", "${workspaceFolder}/include/ac-library",
+                    "${fileBasename}"
+                ]
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "dependsOn": ["Compile"],
+            "problemMatcher": []
         }
     ],
     "version": "2.0.0"
