@@ -77,4 +77,11 @@ struct IO {
   void write(T x, char lastChar) {
     write(x), push(lastChar);
   }
+
+#ifdef ATCODER_MODINT_HPP
+  template <int m>
+  void write(static_modint<m> mx) { write(mx.val()); }
+  template <int id>
+  void write(dynamic_modint<id> mx) { write(mx.val()); }
+#endif
 } io;
